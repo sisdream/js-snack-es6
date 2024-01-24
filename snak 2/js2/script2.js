@@ -36,3 +36,21 @@ const students = [
         grades: 84
     }
 ]
+
+// METODO MAP NOMI MAIUSCOLI
+
+const newStudents = students.map((student) => student.name.toUpperCase());
+console.log("Nomi in maiuscolo: " + newStudents);
+
+// METODO FILTER STUDENTI CON PIU' DI 70
+
+const settanta = students.filter((student) => student.grades >= 70);
+console.log(settanta);
+
+// METODO FILTER STUDENTI CON PIU' DI 70 E CON ID SUPERIORE A 120
+
+const maggioriSettanta = students.filter(
+    (student) => student.grades >= 70 && student.id >= 120
+);
+console.log(maggioriSettanta);
+

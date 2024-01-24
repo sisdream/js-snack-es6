@@ -15,13 +15,13 @@ const vips = [
 ];
   
 // METODO ARRAY MAP
-let tableI = 0;
-const vipTable = vips.map((vip) =>{
-    tableI++;
-    return{
-        table:"Tavolo di " + vip,
-        vipName: vip,
-        tableNumber: tableI,
+
+const vipTable = vips.map((vip, index) => {
+    return {
+      table: "Tavolo di " + vip,
+      vipName: vip,
+      tableNumber: index,
     };
-});
+});                 
+  
 console.log(vipTable);

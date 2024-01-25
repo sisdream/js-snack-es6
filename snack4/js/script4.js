@@ -41,3 +41,9 @@ function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
+//ASSOCIO ALLE CHIAVI UN NUMERO RANDOMICO, UTILIZZANDO IL FOR-EACH
+teams.forEach((elem) => {
+elem.punti_fatti = randomNumber(1, 120);
+elem.falli_presi = randomNumber(1, 60);
+});
+

@@ -2,22 +2,29 @@
 const bici =[
     {
         nome: "focus",
-        peso: 200,
+        peso: 2.00,
     },
     {
         nome: "gazelle",
-        peso: 300,
+        peso: 3.00,
     },
     {
         nome: "yeti",
-        peso: 150,
+        peso: 4.50,
     },
     {
         nome: "look",
-        peso: 230,
+        peso: 2.30,
     },
     {
         nome: "scott",
-        peso: 320,
+        peso: 3.20,
     },
 ]
+
+//CREO UNA VARIABILE E ASSOCIO IL VALORE DI PARTENZA
+let pesoKg = bici[0];
+
+
+
+

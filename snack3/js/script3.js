@@ -34,6 +34,8 @@ for (let i = 1; i < bici.length; i++) {
     };
 }
 
-  
+//FACCIO IL DESTRUCTURING E STAMPO
+const { nome, peso } = pesoKg;
+console.log(`La bici da corsa "${nome}" è la più leggera con un peso di ${peso} kg.`);
 
-
+stampa.innerText = `La bici da corsa "${nome}" è la più leggera con un peso di ${peso} kg.`;

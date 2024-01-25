@@ -35,3 +35,9 @@ const teams = [
       foul: 0,
     },
   ];
+
+//CREO UNA FUNZIONE PER GENERARE UN NUMERO RANDOMICO
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+

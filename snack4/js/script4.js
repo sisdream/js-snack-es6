@@ -36,6 +36,8 @@ const teams = [
     },
   ];
 
+const stampa = document.getElementById("stampa");
+
 //CREO UNA FUNZIONE PER GENERARE UN NUMERO RANDOMICO
 function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -47,3 +49,6 @@ elem.punti_fatti = randomNumber(1, 120);
 elem.falli_presi = randomNumber(1, 60);
 });
 
+//CREO UN NUOVO ARRAY E RESCRIVO I NUOVI VALORI UTILIZZANDO IL MAP
+const teamsEnd = teams.map(({ name, falli_presi }) => ({ name, falli_presi }));
+console.log(teamsEnd);

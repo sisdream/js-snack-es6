@@ -22,9 +22,18 @@ const bici =[
     },
 ]
 
+const stampa = document.getElementById("stampa");
+
 //CREO UNA VARIABILE E ASSOCIO IL VALORE DI PARTENZA
 let pesoKg = bici[0];
 
+//CREO UN CICLO FOR PER TROVARE IL VALORE MINIMO
+for (let i = 1; i < bici.length; i++) {
+    if (bici[i] < pesoKg) {
+      pesoKg = bici[i];
+    };
+}
 
+  
 
 
